@@ -421,6 +421,30 @@ img { max-width: 100%; display: block; }
   background: var(--accent);
 }
 
+/* リンクカード */
+.service-card--link {
+  display: flex;
+  flex-direction: column;
+  color: inherit;
+  cursor: pointer;
+}
+.service-card--link:hover { opacity: 1; }
+
+.service-more {
+  display: inline-block;
+  margin-top: auto;
+  padding-top: 24px;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  color: var(--accent);
+  text-transform: uppercase;
+  transition: letter-spacing 0.3s var(--ease);
+}
+.service-card--link:hover .service-more {
+  letter-spacing: 0.24em;
+}
+
 /* フル幅カードはリストを2列に */
 .service-card--wide .service-list {
   display: grid;
