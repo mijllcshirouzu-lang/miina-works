@@ -293,7 +293,7 @@ img { max-width: 100%; display: block; }
 
 .about-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   gap: 72px;
   align-items: start;
 }
@@ -305,40 +305,6 @@ img { max-width: 100%; display: block; }
   margin-bottom: 24px;
   font-weight: 400;
   letter-spacing: 0.04em;
-}
-
-.message-card {
-  background: var(--off-white);
-  border-left: 3px solid var(--black);
-  padding: 40px 36px 36px;
-  position: relative;
-}
-.message-card::before {
-  content: '\201C';
-  position: absolute;
-  top: 10px;
-  left: 22px;
-  font-family: Georgia, serif;
-  font-size: 3rem;
-  color: var(--gray-mid);
-  line-height: 1;
-}
-
-.message-text {
-  font-size: 0.84rem;
-  line-height: 2.3;
-  color: var(--text-mid);
-  margin-bottom: 24px;
-  font-weight: 400;
-  letter-spacing: 0.04em;
-}
-
-.message-name {
-  font-size: 0.72rem;
-  letter-spacing: 0.12em;
-  color: var(--text-dark);
-  text-align: right;
-  font-weight: 600;
 }
 
 /* ============================
@@ -682,7 +648,6 @@ img { max-width: 100%; display: block; }
   }
   .company-table td { font-size: 0.78rem; }
 
-  .message-card { padding: 32px 24px 28px; }
 }
 
 @media (max-width: 480px) {
